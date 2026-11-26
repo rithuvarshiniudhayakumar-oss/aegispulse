@@ -57,7 +57,22 @@ pytest -q
 ## Benchmark
 
 <!-- BENCHMARK:START -->
-Run `python scripts/run_benchmark.py` to fill this in.
+Measured over 10 seeds per scenario (15000 samples).
+
+| Metric | Value |
+|---|---|
+| Precision | 0.956 |
+| Recall | 0.837 |
+| F1 | 0.893 |
+| False positive rate | 0.0059 |
+| False alarms on normal operations | 0.0 |
+
+| Scenario | Root-cause top-1 accuracy |
+|---|---|
+| Database Overload | 1.0 |
+| Payment Service Failure | 1.0 |
+| API Gateway Degradation | 1.0 |
+| Notification Failure | 1.0 |
 <!-- BENCHMARK:END -->
 
 ## Limitations
